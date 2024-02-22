@@ -40,7 +40,7 @@
             vertical-align: sub;
             font-size: smaller;
         }
-        #price{
+        .price{
             margin-top: 15px;
             margin-left: 200px;
             color: red;
@@ -88,10 +88,28 @@
             margin-left: 200px;
             font-size: smaller;
         }
+        .photo-album{
+            width: 275px;
+            height: 12vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            display: inline-flexbox;
+            background-color: white;
+
+        }
         .img-album{
-            width: 30px;
-            height: 30px;
-            margin-top: 5px;
+            width: 50px;
+            height: 50px;
+            margin-top: 0px;
+            border: 1px solid black;
+        }
+        .btn-add{
+            width: 120px;
+            height: 40px;
+            background-color: red;
+            margin-left: 200px;
+            
         }
     </style>
 </head>
@@ -99,7 +117,7 @@
     <div class="container">
         <h3>Delicious Apples</h3>
         <p id="code">CODE:<sub> 45999</sub></p>
-        <span id="price">
+        <span class="price">
             R$.<span id="value">7.93</span>
         </span>
         <p class="heading-img">SELECT A COLOR</p>
@@ -109,7 +127,7 @@
             <img class="img-orange" src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="orange">
             <img class="img-red" src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="Red">
         </div>
-        <p class="heading-img">BENIFITS</p>
+        <SECTION class="description">BENIFITS</SECTION>
         <ul class="description">
             <li>Apples are nutricious</li>
             <li>Apples may be good for weight loss</li>
@@ -121,11 +139,13 @@
             <div class="photo-album">
                 <ul>
                     <li type="none"><img class="img-album" src="https://yodeli.in/cdn/shop/products/green-apple-organic-fruit_720x.png" alt="img1"></li>
-                    <li></li>
+                    <li> <img src="" alt=""></li>
                 </ul>
 
             </div>
         </div>  
+        
+        <BUtton class="btn-add">ADD TO CART</BUtton>
     </div>
 </body>
 </html>
