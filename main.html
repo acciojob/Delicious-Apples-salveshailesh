@@ -1,140 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apple Varieties</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .product__photo {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 20px;
-    }
-    .photo-container {
-      flex: 1;
-    }
-    .photo-main img {
-      max-width: 100%;
-      height: auto;
-    }
-    .photo-album {
-      flex: 1;
-      display: flex;
-      justify-content: space-between;
-      margin-left: 20px;
-    }
-    .photo-album ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-    .photo-album li {
-      margin-bottom: 5px;
-    }
-    .photo-album li img {
-      max-width: 50px;
-      height: auto;
-    }
-    .price {
-      font-size: 24px;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 10px;
-    }
-    .variant {
-      margin-bottom: 20px;
-    }
-    .variant table {
-      width: 100%;
-    }
-    .variant th, .variant td {
-      padding: 10px;
-      text-align: center;
-    }
-    .variant th {
-      background-color: #f2f2f2;
-    }
-    .variant td img {
-      max-width: 50px;
-      height: auto;
-    }
-    .description {
-      margin-bottom: 20px;
-    }
-    .add-to-cart {
-      text-align: center;
-    }
-    .add-to-cart button {
-      padding: 10px 20px;
-      font-size: 18px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Apple</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #10E37F;
+        }
+        .container{
+            margin: auto;
+            margin-top: 60px;
+            padding: 50px;
+            width: 435px;
+            height: 68vh;
+            background-color: #FFFFFF;
+            border-radius: 3px;
+        }
+        h3{
+            margin-left: 200px;
+            padding: 0;
+            margin-top: 0px;
+            margin-right: 0;
+            margin-bottom: 2px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #code{
+            padding: 0;
+            margin-bottom: 30px;
+            margin-left: 200px;
+            margin-top: 0px;
+            font-size: smaller;
+            color: #B9B9B9;
+        }
+        sub{
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        #price{
+            margin-top: 15px;
+            margin-left: 200px;
+            color: red;
+            vertical-align: middle;
+            margin-bottom: 20px;
+        }
+        #value{
+            font-size: 40px;
+        }
+        .image-container{
+            margin-left: -85px;
+            margin-top: -350px;
+            width: 275px;
+            height: 70vh;
+            border-radius: 5px;
+            background-color: #ABE62C;
+            
+            box-shadow: 3px 5px #D9D9D9;
+        }
+        .photo-main{
+            width: 295px;
+            height: 295px;
+            margin-top: 32px;
+            margin-left: -58px;     
+        }
+        .heading-img{
+            margin-top: 10px;
+            margin-left: 200px;
+            color: #B9B9B9;
+            font-size: 9px;
+        }
+        .variant{
+            width: 190px;
+            height: 50px;
+            margin-left: 240px;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .img-red,.img-yellow,.img-green,.img-orange{
+            width: 30px;
+            height: 30px;
+            margin-top: 5px;
+        }
+        .description{
+            margin-left: 200px;
+            font-size: smaller;
+        }
+        .img-album{
+            width: 30px;
+            height: 30px;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="product__photo">
-      <div class="photo-container">
-        <div class="photo-main">
-          <img src="main_photo.jpg" alt="Main Photo">
+    <div class="container">
+        <h3>Delicious Apples</h3>
+        <p id="code">CODE:<sub> 45999</sub></p>
+        <span id="price">
+            R$.<span id="value">7.93</span>
+        </span>
+        <p class="heading-img">SELECT A COLOR</p>
+        <div class="variant">
+            <img class="img-green" src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green">
+            <img class="img-yellow" src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="Yellow">
+            <img class="img-orange" src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="orange">
+            <img class="img-red" src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="Red">
         </div>
-        <div class="photo-album">
-          <ul>
-            <li><img src="green_apple.jpg" alt="Green Apple"></li>
-            <li><img src="yellow_apple.jpg" alt="Yellow Apple"></li>
-            <li><img src="orange_apple.jpg" alt="Orange Apple"></li>
-            <li><img src="red_apple.jpg" alt="Red Apple"></li>
-          </ul>
-        </div>
-      </div>
-      <div class="price">$7.93</div>
+        <p class="heading-img">BENIFITS</p>
+        <ul class="description">
+            <li>Apples are nutricious</li>
+            <li>Apples may be good for weight loss</li>
+            <li>Apples may be good for bone health</li>
+            <li>They're linked to lowest risk of daibetes</li>
+        </ul>
+        <div class="image-container">
+            <img class="photo-main" src="apple-main.png" alt="main-img">
+            <div class="photo-album">
+                <ul>
+                    <li type="none"><img class="img-album" src="https://yodeli.in/cdn/shop/products/green-apple-organic-fruit_720x.png" alt="img1"></li>
+                    <li></li>
+                </ul>
+
+            </div>
+        </div>  
     </div>
-    <div class="variant">
-      <table>
-        <tr>
-          <th>Color</th>
-          <th>Image</th>
-        </tr>
-        <tr>
-          <td>Green</td>
-          <td><img src="green_apple.jpg" alt="Green Apple"></td>
-        </tr>
-        <tr>
-          <td>Yellow</td>
-          <td><img src="yellow_apple.jpg" alt="Yellow Apple"></td>
-        </tr>
-        <tr>
-          <td>Orange</td>
-          <td><img src="orange_apple.jpg" alt="Orange Apple"></td>
-        </tr>
-        <tr>
-          <td>Red</td>
-          <td><img src="red_apple.jpg" alt="Red Apple"></td>
-        </tr>
-      </table>
-    </div>
-    <div class="description">
-      <h2>BENEFITS</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut urna ac felis lacinia fermentum sed nec lacus. Nulla facilisi. In maximus dui sit amet enim dignissim, vel sodales libero aliquet. Integer in neque at turpis suscipit pretium.</p>
-    </div>
-    <div class="add-to-cart">
-      <button>ADD TO CART</button>
-    </div>
-  </div>
 </body>
 </html>
