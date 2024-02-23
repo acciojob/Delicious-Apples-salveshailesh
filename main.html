@@ -65,8 +65,7 @@
             width: 275px;
             height: 70vh;
             border-radius: 5px;
-            background-color: #abe62c;
-
+            background-color: chartreuse;
             box-shadow: 3px 5px #d9d9d9;
         }
 
@@ -138,6 +137,17 @@
             border: none;
             cursor: pointer;
         }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
     </style>
 </head>
 
@@ -148,21 +158,31 @@
         <span class="price"> R$.<span id="value">7.93</span> </span>
         <p class="heading-img">SELECT A COLOR</p>
         <div class="variant">
-            <img class="img-green"
-                src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png"
-                alt="Green" />
-            <img class="img-yellow"
-                src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png"
-                alt="Yellow" />
-            <img class="img-orange"
-                src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png"
-                alt="orange" />
-            <img class="img-red"
-                src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png"
-                alt="Red" />
+            <ul>
+                <li type="none">
+                    <img class="img-green"
+                        src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png"
+                        alt="Green" />
+                </li>
+                <li type="none">
+                    <img class="img-yellow"
+                        src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png"
+                        alt="Yellow" />
+                </li>
+                <li type="none">
+                    <img class="img-orange"
+                        src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png"
+                        alt="orange" />
+                </li>
+                <li type="none">
+                    <img class="img-red"
+                        src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png"
+                        alt="Red" />
+                </li>
+            </ul>
         </div>
-        <div class="description" >
-            <h2 class="heading-img">BENIFITS</h2>
+        <div class="description">
+            <p class="heading-img">BENIFITS</p>
             <ul>
                 <li>Apples are nutricious</li>
                 <li>Apples may be good for weight loss</li>
@@ -175,7 +195,8 @@
             <div class="photo-album">
                 <ul class="img">
                     <li type="none">
-                        <img class="img-album" src="https://yodeli.in/cdn/shop/products/green-apple-organic-fruit_720x.png" alt="img1" />
+                        <img class="img-album"
+                            src="https://yodeli.in/cdn/shop/products/green-apple-organic-fruit_720x.png" alt="img1" />
                     </li>
                     <li>
                         <img class="img-album" src="https://vegetablewale.in/wp-content/uploads/2023/03/Green-Apple.jpg"
